@@ -9,9 +9,9 @@
 
       <!-- Text Section -->
       <div class="text-container">
-        <h3>Experience Elegance</h3>
+        <h3>Discover Elegance</h3>
         <p>
-          Discover the captivating scents crafted to ignite your senses. Each fragrance is
+          Captivating scents crafted to ignite your senses. Each fragrance is
           designed with care, blending the finest ingredients to bring you a touch of
           sophistication. Unleash your inner elegance with Liquid Dreams.
         </p>
@@ -73,6 +73,7 @@ export default {
 .image-text-row {
   padding: 2rem 1rem;
   background-color: #f7f7f7; /* Light background color */
+  height: 100vh;
 }
 
 /* Container styles */
