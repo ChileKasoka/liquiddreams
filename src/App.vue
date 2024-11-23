@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <AnnouncementBanner />
+    <NavMenu />
+    <div class="content">
+      <router-view />
+    </div>
+    <FooterVue />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FooterVue from './components/Footer.vue';
+import NavMenu from './components/Nav.vue'
+import AnnouncementBanner from './components/AnnouncementBanner.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    NavMenu,
+    FooterVue,
+    AnnouncementBanner,
   }
 }
 </script>
@@ -21,6 +32,23 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1; /* Pushes footer to the bottom */
+}
+
+body {
+  width: 100%;
+  /* height: 100%; */
+  /* overflow: hidden; */
+}
+
 </style>
