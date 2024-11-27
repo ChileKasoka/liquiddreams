@@ -2,11 +2,13 @@
     <div class="categories">
       <h2>Shop by Category</h2>
       <ul class="category-list">
+        <li><a href="/store/stock">In stock</a></li>
         <li><a href="/store/men">Men</a></li>
         <li><a href="/store/women">Women</a></li>
         <li><a href="/store/affordable">Affordable</a></li>
         <li><a href="/store/luxury">Luxury</a></li>
         <li><a href="/store/clearance">Clearance Sales</a></li>
+        <li><a href="/store/coming_soon">Coming Soon</a></li>
       </ul>
     </div>
   </template>
